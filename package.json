@@ -2,9 +2,8 @@
   "name": "amity__test",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
   },
   "keywords": [],
