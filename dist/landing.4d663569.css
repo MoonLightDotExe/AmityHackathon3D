@@ -1,0 +1,99 @@
+body {
+  background-color: #000;
+}
+
+h1 {
+  color: #fff;
+  font-size: 100px;
+}
+
+.but {
+  text-align: center;
+  margin-top: 200px;
+}
+
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translate(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  border-radius: 100px;
+  padding: 15px 40px;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-block;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px #fff;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px #fff;
+}
+
+.btn-white {
+  color: #000;
+  background-color: #fff;
+}
+
+.myVideo {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  .myVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  .myVideo {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.btn:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 100px;
+  transition: all .4s;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-white:after {
+  background-color: #fff;
+}
+
+.btn:hover:after {
+  opacity: 0;
+  transform: scale(1.4)scale(1.6);
+}
+
+.btn-animated {
+  animation: .5s ease-out .75s backwards moveInButton;
+}
+
+/*# sourceMappingURL=landing.4d663569.css.map */
